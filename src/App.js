@@ -1,12 +1,23 @@
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ChatPage from './components/chat';
+import HomePage from './components/home';
+import SignInPage from './components/signin';
+import SignUpPage from './components/signup';
 // import socketIO from 'socket.io-client';
 // const socket = socketIO.connect('http://localhost:4000');
 function App() {
   return (
-    <div>
-      <p>Hello World!</p>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/signin" element={<SignInPage />}></Route>
+          <Route path="/signup" element={<SignUpPage />}></Route>
+          <Route path="/chat" element={<ChatPage />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
