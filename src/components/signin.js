@@ -25,7 +25,8 @@ export default function SignIn() {
             email: data.get('email')
         };
 
-        localStorage.setItem('userData', userData);
+        localStorage.setItem('email', data.get('email'));
+        localStorage.setItem('userData', JSON.stringify(userData));
         navigate('/chat');
     };
 
