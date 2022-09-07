@@ -27,7 +27,7 @@ const ChatFooter = ({socket}) => {
         }
         setMessage('');
     };
-    console.log(message);
+    
     return (
         <Box component="form" onSubmit={handleSendMessage} noValidate sx={{ mt: 1 }}>
             <Grid container style={{ padding: '20px' }}>
