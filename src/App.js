@@ -7,7 +7,7 @@ import SignUpPage from './components/signup';
 
 import socketIO from 'socket.io-client';
 // const socket = socketIO.connect('http://localhost:4000', { transports: ['websocket', 'polling', 'flashsocket'] });
-const socket = socketIO.connect('https://just-chat-backend.vercel.app:4000', { transports: ['websocket', 'polling', 'flashsocket'] });
+const socket = socketIO.connect('https://just-chat-backend.vercel.app', { transports: ['websocket'] });
 
 function App() {
   return (
