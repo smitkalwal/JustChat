@@ -7,7 +7,7 @@ import SignUpPage from './components/signup';
 
 import socketIO from 'socket.io-client';
 // const socket = socketIO.connect('http://192.168.0.103:4000');
-const socket = socketIO.connect('https://just-chat-backend.vercel.app');
+const socket = socketIO.connect('https://just-chat-backend.vercel.app:4000');
 
 function App() {
   return (
